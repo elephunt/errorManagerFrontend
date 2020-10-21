@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Error Creation</h1>
+<div mat-dialog-content>
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+      <td>
+        <mat-form-field>
+          <mat-label>Code</mat-label>
+          <input matInput type="text" [(ngModel)]="code">
+        </mat-form-field>
+      </td>
+    </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Reason</mat-label>
+            <input matInput   type="text" [(ngModel)]="reason">
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Status</mat-label>
+            <input matInput  type="text" [(ngModel)]="status"/>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Trace Id</mat-label>
+            <input matInput   type="text" [(ngModel)]="traceId"/>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onSave()"  cdkFocusInitial>Create</button>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>
+
+
